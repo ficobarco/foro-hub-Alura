@@ -20,15 +20,6 @@ Requisitos Previos:
 Configuración del Proyecto:
 
 
-Configurar MySQL:
-
-sql
-
-CREATE DATABASE foro_hub;
-CREATE USER 'foro_user'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON foro_hub.* TO 'foro_user'@'localhost';
-FLUSH PRIVILEGES;
-
 Configurar propiedades en application.properties:
 
 properties
@@ -37,7 +28,7 @@ properties
     spring.datasource.username=foro_user
     spring.datasource.password=password
     spring.jpa.hibernate.ddl-auto=update
-    api.security.secret=tu_secreto_de_jwt
+    api.security.secret=clavejwt
 
 
 
